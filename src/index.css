@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    .active {
+        @apply text-primary;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
