@@ -33,13 +33,32 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
       <div className="Navbar__card">
        {/*} top section*/}
        <div>
-        <FaUserCircle size={50} className="text-gray-500"/>
-        <div className="text-gray-500">
-        <h1>Hello User</h1>
-        <h1 className='text-sm text-slate-500'>Premium User</h1>
-       </div>
-       {/*Navlinks Section*/}
+        <div className="flex items-center justify-start gap-4">
+        <FaUserCircle size={50} 
+        className="text-gray-500"/>
+         <div className="text-gray-500">
+          <h1>Hello User</h1>
+           <h1 className='text-sm text-slate-500'>Premium User</h1>
+        </div>
+        </div>   
+       
+      
       </div>
+       {/*Navlinks Section*/}
+     <div className="text-black mt-12">
+      <ul className="space-y-4 text-xl ">
+      {navbarLinks.map(({ name, link }) => (
+        <li key={name}>
+          <Link
+             to={link}
+              onClick={() => setShowMenu(false)}
+              className="mb-5 inline-block">
+             {name}
+          </Link>
+         </li>
+         ))}   
+      </ul>
+     </div>
     </div>
     </div>
   );
