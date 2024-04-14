@@ -1,5 +1,5 @@
 import React from 'react';
-import NatureVideo from "../assets/Videos/20776245-uhd_3840_2160_30fps.mp4";
+import NatureVideo from "../assets/Videos/20776245-hd_1920_1080_30fps.mp4";
 import Hero from '../components/Hero/Hero';
 const Home = () => {
   return (
