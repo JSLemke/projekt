@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Adventure Park",
+    "location": "Bergwelt",
+    "category": "Outdoor",
+    "img": "https://cdn.pixabay.com/photo/2019/05/27/09/34/st-george-4232272_1280.jpg",
+    "price": 550 
+  },
+  {
+    "id": 2,
+    "name": "Historical Museum",
+    "location": "Historischer Ort",
+    "category": "Cultural",
+    "img": "https://cdn.pixabay.com/photo/2014/07/10/17/18/battleship-389274_1280.jpg",
+    "price": 270
+  },
+  {
+    "id": 3,
+    "name": "Wildlife Sanctuary",
+    "location": "Regenwald",
+    "category": "Nature",
+    "img": "https://cdn.pixabay.com/photo/2019/05/09/15/08/jungle-4191340_1280.jpg",
+    "price": 800
+  }
+]

@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "airline": "AirX",
+      "departure": "New York",
+      "destination": "Paris",
+      "price": 500
+    },
+    {
+      "id": 2,
+      "airline": "SkyJet",
+      "departure": "London",
+      "destination": "Tokyo",
+      "price": 800
+    },
+    {
+      "id": 3,
+      "airline": "Sunrise Airlines",
+      "departure": "Los Angeles",
+      "destination": "Sydney",
+      "price": 1000
+    }
+  ]
+  

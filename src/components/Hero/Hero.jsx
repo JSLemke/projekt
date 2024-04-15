@@ -12,50 +12,52 @@ const Hero = () => {
                         <p data-aos="fade-up">Our Packages</p>
                         <p
                             data-aos="fade-up"
-                            data-aos-delay="400"
+                            data-aos-delay="600"
                             className="font-bold text-3xl"
-                        >Search your Destination</p>
+                        >Suche Dein Traumziel</p>
                     </div>
                     {/* Form Section */}
-                    <div className="space-y-4 bg-white rounded-md p-3 grid grid-cols-1 sm:grid-cols-3">
+                    <div className="space-y-5 bg-white rounded-md p-3 grid grid-cols-3 sm:grid-cols-3 my-2 pb-4">
                         <div>
                             <label htmlFor="destinationInput" className="opacity-90">
-                                Where would you like to travel?
+                                <div className='w-full flex justify-between items-center'>
+                                    <p>Wohin</p>
+                                </div>
                             </label>
                             <input
                                 type="text"
                                 name="destination"
                                 id="destinationInput"
-                                placeholder="Dubai"
-                                className="w-full bg-gray-100 my-5 range accent-primary rounded-full focus:outline-primary focus:outline outline-1 p-3"
+                                placeholder="Wohin"
+                                className="w-full bg-gray-100 range accent-primary my-7 rounded-full focus:outline-primary focus:outline outline-1 p-3"
                             />
                         </div>
                         <div>
                             <label htmlFor='dateInput' className='opacity-70'>
-                                Date
+                                Datum
                             </label>
                             <input
                                 type="date"
                                 name="date"
                                 id="dateInput"
-                                className='w-full !placeholder-slate-400 bg-gray-100 my-1 rounded-full focus:outline-primary focus:outline outline-1 p-3'
+                                className='w-full !placeholder-slate-400 bg-gray-100 my-2 rounded-full focus:outline-primary focus:outline outline-1 p-3'
                             />
                         </div>
                         <div>
                             <label htmlFor='priceInput' className='opacity-90 block'>
                                 <div className='w-full flex justify-between items-center'>
-                                    <p>Max Price</p>
+                                    <p>Max Preis</p>
                                     <p className='font-bold text-xl'>${priceValue}</p>
                                 </div>
                             </label>
-                            <div className='bg-gray-100 rounded-full p-4 flex items-center justify-center'>
+                            <div className='bg-gray-100 rounded-full my-1 p-3 flex items-center justify-center'>
                                 <input
                                     type="range"
                                     name="price"
                                     id="priceInput"
-                                    className='appearance-none w-full bg-gradient-to-r from-primaryto secondery h-2 rounded-full my-1'
+                                    className='appearance-none w-full bg-gradient-to-r from-primaryto secondery h-1 items-center justify-center rounded-full p-2 my-1'
                                     min="50"
-                                    max="1000"
+                                    max="9999"
                                     value={priceValue}
                                     step="10"
                                     onChange={(e) => setPriceValue(e.target.value)}
@@ -65,8 +67,8 @@ const Hero = () => {
                     </div>
                     {/* Button section */}
                     <div className="flex justify-center">
-                        <button className="bg-gradient-to-r from-primary to-secondary text-white hover:scale-105 px-4 py-2 rounded-full duration-200">
-                            Search Now
+                        <button className="bg-gradient-to-r from-sky-400 to-blue-400 hover:from-primary hover:to-secondary text-white hover:scale-105 px-4 py-2 rounded-full duration-200 p-3">
+                            suchen
                         </button>
                     </div>                                                                              
                 </div>

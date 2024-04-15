@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "Gourmet Fusion",
+      "location": "Downtown",
+      "cuisine": "International"
+    },
+    {
+      "id": 2,
+      "name": "Cozy Cafe",
+      "location": "Old Town",
+      "cuisine": "European"
+    },
+    {
+      "id": 3,
+      "name": "Sushi Sensation",
+      "location": "Waterfront",
+      "cuisine": "Japanese"
+    }
+  ]
+  

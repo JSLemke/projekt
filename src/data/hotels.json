@@ -1,0 +1,22 @@
+
+[
+    {
+      "id": 1,
+      "name": "Luxury Resort",
+      "location": "Beachfront Paradise",
+      "price": 300
+    },
+    {
+      "id": 2,
+      "name": "Mountain Lodge",
+      "location": "Alpine Retreat",
+      "price": 200
+    },
+    {
+      "id": 3,
+      "name": "Urban Chic Hotel",
+      "location": "City Center",
+      "price": 150
+    }
+  ]
+  
