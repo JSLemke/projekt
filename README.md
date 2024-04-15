@@ -100,7 +100,7 @@ Ich richte eine Fake-API mit JSON Server ein, um Mock-Daten während der Entwick
 Ich verarbeite die empfangenen Daten in meiner Anwendung und zeige sie entsprechend an.
 
 ### Entwickeln, Testen und Bereitstellen: 
-Ich entwickle meine Anwendung regelmäßig, teste sie gründlich und bereite sie für die Bereitstellung (Netlify, Vercel etc) vor.
+Ich entwickle meine Anwendung und überprüfe regelmäßig, teste sie gründlich und bereite sie für die Bereitstellung (Netlify, Vercel etc) vor.
 
 
 
