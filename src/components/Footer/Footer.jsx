@@ -82,7 +82,7 @@ const Footer = () => {
                       {link.title} 
                     </h1>
                     <ul className="flex flex-col gap-3">
-                      <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200">
+                      <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-yellow-500 space-x-1 text-gray-700 dark:text-gray-200">
                         <a href={link.link}>{link.title}</a>
                       </li>
                     </ul>
@@ -92,7 +92,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <div className="text-center py-5 border-t-2 border-gray-300/50 bg-primary text-white">
+            <div className="text-center py-5 border-t-2 border-gray-300/50 bg-orange-400 text-white">
              @ {new Date().getFullYear()} 
             </div>
           </div>

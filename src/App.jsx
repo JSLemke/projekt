@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
@@ -7,19 +7,17 @@ import NoPage from "./pages/NoPage";
 import PlacesRoute from "./pages/PlacesRoute";
 import About from "./pages/About";
 import BlogsDetails from "./pages/BlogsDetails";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import "@maptiler/sdk/dist/maptiler-sdk.css";
+import * as maptilersdk from '@maptiler/sdk';
+maptilersdk.config.apiKey = 'tMMPzGKgV7jjqWW2wHdr';
 
 const App = () => {
-  useEffect(() => {
-    AOS.init({
-      offset: 100,
-      duration: 900,
-      easing: "ease-in-sine",
-      delay: 100,
-    });
-    AOS.refresh();
-  }, []);
+  const map = new maptilersdk.Map({
+    container: 'map',
+    style: maptilersdk.MapStyle.STREETS,
+    center: [16.62662018, 49.2125578],
+    zoom: 14,
+  });
 
   return (
     <BrowserRouter>
@@ -31,7 +29,6 @@ const App = () => {
           <Route path="best-places" element={<PlacesRoute />} />
           <Route path="about" element={<About />} />
           <Route path="*" element={<NoPage />} />
-          <Route path="/" exact="true" component={Home} />
         </Route>
       </Routes>
     </BrowserRouter>

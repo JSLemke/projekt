@@ -1,8 +1,8 @@
-const http = require('http');
-const fs = require('fs');
-const path = require('path');
+import http from 'http';
+import fs from 'fs/promises';
+import { join } from 'path';
 
-const server = http.createServer((req, res) => {
+const server = http.createServer(async (req, res) => {
   // Set CORS headers
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
@@ -16,28 +16,28 @@ const server = http.createServer((req, res) => {
   }
 
   // Handle API routes
-  if (req.url === '/hotels' && req.method === 'GET') {
-    // Read hotel data from JSON file
-    fs.readFile(path.join(__dirname, 'data', 'hotels.json'), 'utf8', (err, data) => {
-      if (err) {
-        res.writeHead(500);
-        res.end(JSON.stringify({ error: 'Internal Server Error' }));
-        return;
-      }
+  if (req.url === '/Hotels' && req.method === 'GET') {
+    try {
+      // Read hotel data from JSON file
+      const data = await fs.readFile(join(__dirname, 'data', 'Hotels.json'), 'utf8');
       res.writeHead(200, { 'Content-Type': 'application/json' });
       res.end(data);
-    });
-  } else if (req.url === '/flights' && req.method === 'GET') {
-    // Read flight data from JSON file
-    fs.readFile(path.join(__dirname, 'data', 'flights.json'), 'utf8', (err, data) => {
-      if (err) {
-        res.writeHead(500);
-        res.end(JSON.stringify({ error: 'Internal Server Error' }));
-        return;
-      }
+    } catch (err) {
+      console.error(err);
+      res.writeHead(500);
+      res.end(JSON.stringify({ error: 'Internal Server Error' }));
+    }
+  } else if (req.url === '/Flights' && req.method === 'GET') {
+    try {
+      // Read flight data from JSON file
+      const data = await fs.readFile(join(__dirname, 'data', 'Flights.json'), 'utf8');
       res.writeHead(200, { 'Content-Type': 'application/json' });
       res.end(data);
-    });
+    } catch (err) {
+      console.error(err);
+      res.writeHead(500);
+      res.end(JSON.stringify({ error: 'Internal Server Error' }));
+    }
   } else {
     // Handle unknown routes
     res.writeHead(404);

@@ -4,13 +4,14 @@
 
 @layer base {
     .active {
-        @apply text-primary;
+        @apply text-orange-400;
     }
 }
 
 @media (max-width: 768px) {
     .navbar-container {
         flex-direction: column;
+        @apply p-4;
     }
 }
 .top-0 {

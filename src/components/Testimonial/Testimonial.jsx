@@ -67,11 +67,11 @@ const Testimonial = () => {
         <div className="container">
           {/* Header section */}
           <div className="text-center mb-20 max-w-[400px] mx-auto">
-            <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+            <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">
               
             </p>
-            <h1 className="text-3xl font-bold text-cyan-600 shadow-md">Erfahrungsberichte</h1>
-            <p className="mt-4 text-xs text-cyan-600 shadow-md">
+            <h1 className="text-3xl font-bold text-orange-500 shadow-md">Erfahrungsberichte</h1>
+            <p className="mt-4 text-xs text-orange-500 shadow-md">
               {" "}
              Auf verschiedenen Reisen rund um die Welt berichten Berge & Meer-Gäste live im Internet von ihren Erlebnissen. Authentischer kann der Einblick in fremde Kulturen nicht sein.
             </p>
@@ -86,7 +86,7 @@ const Testimonial = () => {
               {testimonialData.map(({ id, name, text, img }) => {
                 return (
                   <div key={id} className="my-6">
-                    <div className="flex flex-col justify-center items-center gap-4 text-center shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative">
+                    <div className="flex flex-col justify-center items-center gap-4 text-center shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative hover:scale-105">
                       <img
                         src={img}
                         alt=""

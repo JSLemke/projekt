@@ -7,7 +7,7 @@ import { IoFastFoodSharp } from "react-icons/io5";
 const Banner = () => {
   return (
     <>
-      <div className="min-h-[450px] bg-blue-100">
+      <div className="min-h-[450px] bg-yellow-50">
         <div className="min-h-[550px] flex justify-center items-center backdrop-blur-xl py-10 sm:py-0 ">
           <div className="container">
             <div className="grid grid-cols-2 sm:grid-cols-2 gap-10 items-center">
@@ -23,13 +23,13 @@ const Banner = () => {
               <div className="flex flex-col justify-center gap-6 sm:pt-1 lg:px-16">
                 <h1
                   data-aos="fade-up"
-                  className="text-3xl sm:text-4xl font-bold"
+                  className="text-3xl sm:text-4xl font-bold text-orange-500"
                 >
                   Reise mit uns an die schönsten Orte der Welt
                 </h1>
                 <p
                   data-aos="fade-up"
-                  className="text-sm text-cyan-500 tracking-wide leading-8"
+                  className="text-sm text-orange-500 tracking-wide leading-8"
                 >
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Eaque reiciendis inventore iste ratione ex alias quis magni at
