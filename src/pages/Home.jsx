@@ -32,10 +32,10 @@ const Home = () => {
           <Hero />
         </div>
         <Places handleOrderPopup={handleOrderPopup} />
-        <BannerPic img={BannerImg} />
+        <BannerPic img={BannerImg} height={400} /> {/* Anpassen der Höhe */}
         <BlogsComp />
         <Banner />
-        <BannerPic img={Banner2} />
+        <BannerPic img={Banner2} height={400} /> {/* Anpassen der Höhe */}
         <Testimonial />
         <OrderPopup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
       </div>
