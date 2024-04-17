@@ -15,7 +15,7 @@ const YourComponent = () => {
 
   return (
     <div>
-      {/* Dein JSX-Code hier */}
+      
     </div>
   );
 };

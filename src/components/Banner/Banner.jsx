@@ -54,7 +54,7 @@ const Banner = () => {
                     </div>
                     <div className="flex items-center gap-4">
                       <IoFastFoodSharp className="text-4xl h-12 w-12 shadow-sm p-4 rounded-full bg-yellow-100 dark:bg-yellow-400" />
-                      <p>Essen</p>
+                      <p>Restaurants</p>
                     </div>
                   </div>
                 </div>

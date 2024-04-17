@@ -29,8 +29,8 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
         <div className="flex items-center justify-start gap-4">
           <FaUserCircle size={50} className="text-gray-500" />
           <div className="text-gray-500">
-            <h1>Hello User</h1>
-            <h1 className='text-sm text-slate-500'>Premium User</h1>
+            <h1>Hallo User</h1>
+            <h1 className='text-sm text-slate-500'>User-Name</h1>
           </div>
         </div>
       </div>

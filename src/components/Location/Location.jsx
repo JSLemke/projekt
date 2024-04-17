@@ -30,7 +30,7 @@ const Location = () => {
       <section data-aos="fade-up">
         <div className="container my-4">
           <h1 className="inline-block border-l-8 border-yellow-300 py-2 pl-2 mb-4 text-xl font-bold sm:text-3xl">
-            Location to Visit
+            Orte zum Reisen
           </h1>
 
           <div className="rounded-xl overflow-hidden">

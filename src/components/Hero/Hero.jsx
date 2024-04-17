@@ -41,7 +41,7 @@ const Hero = () => {
             <div className="container">
                 <div className="grid grid-cols-1 gap-3">
                     <div className='text-white'>
-                        <p data-aos="fade-up">Our Packages</p>
+                        <p data-aos="fade-up">Unsere Pakete</p>
                         <p
                             data-aos="fade-up"
                             data-aos-delay="600"
