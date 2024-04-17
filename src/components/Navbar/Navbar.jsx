@@ -10,15 +10,15 @@ import ResponsiveMenu from './ResponsiveMenu.jsx';
 // Dropdown Links
 const DropdownLinks = [
   {
-    name: "Our Services",
+    name: "Unser Service",
     link: "/#services",
   },
   {
-    name: "Top Brands",
+    name: "Top Reisen",
     link: "/#mobile_brands",
   },
   {
-    name: "Location",
+    name: "Reiseziele",
     onClick: () => { /* Aktion für den Klick auf "Location" */ }
   },
 ];
