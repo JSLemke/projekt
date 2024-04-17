@@ -5,7 +5,7 @@ import axios from 'axios';
 export async function fetchHotelsData() {
   try {
     const response = await axios.get(process.env.REACT_APP_HOTELS_API_URL);
-    // Hier kannst du die Daten verarbeiten und zurückgeben
+    
     return response.data;
   } catch (error) {
     console.error('Error fetching hotels data:', error);
@@ -17,7 +17,7 @@ export async function fetchHotelsData() {
 export async function fetchRestaurantsData() {
   try {
     const response = await axios.get(process.env.REACT_APP_RESTAURANTS_API_URL);
-    // Hier kannst du die Daten verarbeiten und zurückgeben
+   
     return response.data;
   } catch (error) {
     console.error('Error fetching restaurants data:', error);
@@ -29,7 +29,7 @@ export async function fetchRestaurantsData() {
 export async function fetchAttractionsData() {
   try {
     const response = await axios.get(process.env.REACT_APP_ATTRACTIONS_API_URL);
-    // Hier kannst du die Daten verarbeiten und zurückgeben
+    
     return response.data;
   } catch (error) {
     console.error('Error fetching attractions data:', error);
@@ -41,7 +41,7 @@ export async function fetchAttractionsData() {
 export async function fetchEventsData() {
   try {
     const response = await axios.get(process.env.REACT_APP_EVENTS_API_URL);
-    // Hier kannst du die Daten verarbeiten und zurückgeben
+  
     return response.data;
   } catch (error) {
     console.error('Error fetching events data:', error);

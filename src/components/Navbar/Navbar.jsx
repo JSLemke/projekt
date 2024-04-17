@@ -63,7 +63,7 @@ const Navbar = () => {
         {/* Logo */}
         <div>
           <NavLink to="/" onClick={() => window.scrollTo(0, 0)}>
-          <img src={LogoImg} alt="Logo" className="h-16 object-contain" />
+          <img src={LogoImg} alt="Logo" className="h-16 object-contain-xl bg-transparent-yellow-100" />
 
           </NavLink>
         </div>
