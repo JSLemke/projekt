@@ -10,7 +10,7 @@ const Hotels = () => {
 
   return (
     <div>
-      {/* Hier kannst du die Hotels-Daten in deiner Komponente verwenden */}
+      
     </div>
   );
 };

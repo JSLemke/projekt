@@ -10,7 +10,7 @@ const ExampleComponent = () => {
   const [attractionsData, setAttractionsData] = useState([]);
   const [flightsData, setFlightsData] = useState([]);
 
-  // Verwende useEffect, um die Daten bei der Komponentenmontage abzurufen
+  // useEffect, um die Daten bei der Komponentenmontage abzurufen
   useEffect(() => {
     async function fetchData() {
       try {
@@ -33,7 +33,6 @@ const ExampleComponent = () => {
     fetchData();
   }, []); // Leeres Array als zweites Argument, um sicherzustellen, dass die Abfrage nur einmal erfolgt
 
-  // Hier kannst du die abgerufenen Daten in der Komponente verwenden
   return (
     <div>
       {/* Beispiel: Rendern der Hotels */}

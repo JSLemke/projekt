@@ -10,7 +10,7 @@ const Flights = () => {
 
   return (
     <div>
-      {/* Hier kannst du die Flüge-Daten in deiner Komponente verwenden */}
+    
     </div>
   );
 };
